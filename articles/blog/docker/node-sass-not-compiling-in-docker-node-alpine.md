@@ -1,6 +1,6 @@
 # Node Sass not compiling using docker compose
 
-Paradoxically this is not a post about node-sass problems but the use of `.dockerignore` file.  There is nothing wrong with node-sass in docker-as far I know, but I found myself in a nasty situation trying to build my project using node-sass and getting this error after running `docker-compose build`.
+Paradoxically this is not a post about node-sass problems but the use of `.dockerignore` file.  There is nothing wrong with node-sass in docker-as far I know, but I found myself in strange situation trying to build my project using node-sass and getting this error after running `docker-compose build`.
 
 
 ## The problem
@@ -16,21 +16,6 @@ Found bindings for the following environments:
 
 This usually happens because your environment has changed since running `npm install`.
 Run `npm rebuild node-sass` to download the binding for your current environment.
-
-> Build error occurred
-Error: > Build failed because of webpack errors
-    at build (/app/frontend/node_modules/next/dist/build/index.js:6:847)
-npm ERR! code ELIFECYCLE
-npm ERR! errno 1
-npm ERR! cines-frontend@1.0.0 build: `next build`
-npm ERR! Exit status 1
-npm ERR! 
-npm ERR! Failed at the cines-frontend@1.0.0 build script.
-npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-
-npm ERR! A complete log of this run can be found in:
-npm ERR!     /root/.npm/_logs/2019-08-03T18_17_14_954Z-debug.log
-ERROR: Service 'frontend' failed to build: The command '/bin/sh -c npm run build' returned a non-zero code: 1
 ```
 The error message stated `Node Sass could not find a binding for your current environment` but I had the  module `node-sass` present in my `package.json` and the `npm install` was being run.  So what was the problem?
 
@@ -61,5 +46,5 @@ frontend:
 		- /app/frontend/node_modules/
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MTcwNzA0NywzMDM1NjY3MTldfQ==
+eyJoaXN0b3J5IjpbMTM3NDM0OTcwMCwzMDM1NjY3MTldfQ==
 -->
