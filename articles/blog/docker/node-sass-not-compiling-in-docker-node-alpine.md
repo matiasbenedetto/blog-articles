@@ -49,8 +49,9 @@ Dockerfile
 .next
 .build
 ```
-
+## With Volumens
+If you are using volumes in your docker-compose to mount your local files during development for example, yo will need to exclude your no 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAzNTY2NzE5XX0=
+eyJoaXN0b3J5IjpbLTM2MTE4MDk1NSwzMDM1NjY3MTldfQ==
 -->
