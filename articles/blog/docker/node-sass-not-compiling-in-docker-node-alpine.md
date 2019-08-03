@@ -4,6 +4,7 @@ Paradoxically this is not a post about node-sass problems but the use of `.docke
 
 
 ## The problem
+I found an error like this building my React app inside a Docker container:
 ```
 Failed to compile.
 
@@ -46,5 +47,5 @@ frontend:
 		- /app/frontend/node_modules/
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NDM0OTcwMCwzMDM1NjY3MTldfQ==
+eyJoaXN0b3J5IjpbLTEwNDE2Nzc5MSwzMDM1NjY3MTldfQ==
 -->
