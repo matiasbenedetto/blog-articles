@@ -52,8 +52,16 @@ Dockerfile
 ## With Volumens
 If you are using volumes in your docker-compose to mount your local files during development for example, yo will need a way  to indicate Docker you want to use the `node_modules` folder of your containerized app and not your local `node_modules` folder.
 
-You can do this mounting 
+You can do this mounting explitely the `node_modules` folder of your containerized app:
+```
+frontend:
 
+	volumes:
+
+		- ./frontend:/app/frontend/
+
+		- /app/frontend/node_modules/
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNzg0MTg3NywzMDM1NjY3MTldfQ==
+eyJoaXN0b3J5IjpbLTg4MTgzNjk5LDMwMzU2NjcxOV19
 -->
