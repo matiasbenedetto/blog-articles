@@ -5,8 +5,6 @@ You can see it all in: https://
 ## License
 All the content of this articles are licensed under **Creative Commons 2.0**  Attribution-NonCommercial 4.0 International  (CC BY-NC 4.0).
 
-## Attribution-NonCommercial 4.0 International  (CC BY-NC 4.0)
-
 This is a human-readable summary of (and not a substitute for) the  [license](https://creativecommons.org/licenses/by-nc/4.0/legalcode). [Disclaimer](https://creativecommons.org/licenses/by-nc/4.0/#).
 
 ### You are free to:
@@ -34,5 +32,5 @@ This is a human-readable summary of (and not a substitute for) the  [license](ht
 -   You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable  [exception or limitation](https://creativecommons.org/licenses/by-nc/4.0/#).
 -   No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as  [publicity, privacy, or moral rights](https://creativecommons.org/licenses/by-nc/4.0/#)  may limit how you use the material.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzYyMjExM119
+eyJoaXN0b3J5IjpbLTE4MTE1Mzg2NzJdfQ==
 -->
