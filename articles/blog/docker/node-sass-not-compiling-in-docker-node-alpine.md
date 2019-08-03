@@ -50,7 +50,7 @@ Dockerfile
 .build
 ```
 ## With Volumes
-If you are using volumes in your docker-compose, for example, to mount your local files during development you will need a way to indicate Docker you want to use the `node_modules` folder of your containerized app and not your local `node_modules` folder.
+If you are using volumes in your docker-compose, for example, to mount your local files during development you will need a way to indicate Docker you want to use the `node_modules` folder of your containerized app and not your local `node_modules` folder. Why? To use the specific npm modules, like the correct c installed for your docker container operative system and not your local ones.
 
 You can do this mounting explitely the `node_modules` folder of your containerized app.
 **Example:**
@@ -61,5 +61,5 @@ frontend:
 		- /app/frontend/node_modules/
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NjA2MTI3NCwzMDM1NjY3MTldfQ==
+eyJoaXN0b3J5IjpbMTE2MzYyMTg1NywzMDM1NjY3MTldfQ==
 -->
