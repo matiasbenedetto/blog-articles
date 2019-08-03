@@ -49,19 +49,17 @@ Dockerfile
 .next
 .build
 ```
-## With Volumens
-If you are using volumes in your docker-compose to mount your local files during development for example, yo will need a way  to indicate Docker you want to use the `node_modules` folder of your containerized app and not your local `node_modules` folder.
+## With Volumes
+If you are using volumes in your docker-compose, for example, to mount your local files during development you will need a way to indicate Docker you want to use the `node_modules` folder of your containerized app and not your local `node_modules` folder.
 
-You can do this mounting explitely the `node_modules` folder of your containerized app:
+You can do this mounting explitely the `node_modules` folder of your containerized app.
+**Example:**
 ```
 frontend:
-
 	volumes:
-
 		- ./frontend:/app/frontend/
-
 		- /app/frontend/node_modules/
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MTgzNjk5LDMwMzU2NjcxOV19
+eyJoaXN0b3J5IjpbLTM0NjA2MTI3NCwzMDM1NjY3MTldfQ==
 -->
