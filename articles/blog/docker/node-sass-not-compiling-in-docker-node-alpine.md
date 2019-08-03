@@ -35,7 +35,7 @@ Dockerfile
 .next
 .build
 ```
-## With Volumes
+## If you are using Volumes
 If you are using volumes in your docker-compose, for example, to mount your local files during development you will need a way to indicate Docker you want to use the `node_modules` folder of your containerized app and not your local `node_modules` folder. Why? To use the specific npm modules, like the correct compiled version of `node-sass`,  installed in your docker container operative system and not your local ones.
 
 You can do this mounting explitely the `node_modules` folder of your containerized app.
@@ -47,5 +47,6 @@ frontend:
 		- /app/frontend/node_modules/
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDE2Nzc5MSwzMDM1NjY3MTldfQ==
+eyJoaXN0b3J5IjpbNzA2Nzk5NjE1LC0xMDQxNjc3OTEsMzAzNT
+Y2NzE5XX0=
 -->
