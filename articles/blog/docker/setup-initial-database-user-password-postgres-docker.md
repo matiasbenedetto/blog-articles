@@ -20,7 +20,6 @@ The key to succes connecting to the database in your container is set enviroment
         - POSTGRES_USER=c2c
 ```
 
-testing
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MDcwMzM3MywtNjMxNzI1OTU3XX0=
+eyJoaXN0b3J5IjpbNTM1MzI5NzY5LC02MzE3MjU5NTddfQ==
 -->
