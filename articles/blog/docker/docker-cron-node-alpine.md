@@ -1,6 +1,8 @@
 # How to set-up a cron job inside a docker container
 
-In this article we will walk trough to the creation of a container and a cronjob to execute tasks periodically. I will use examples in my use-case
+In this article we will walk trough to the creation of a container and a cronjob to execute tasks periodically.
+
+I will use examples in my usage during the building of a **scrapper**, so consider `scrapper` the root folder of my app.
 
 # Create your crontab file
 ```
@@ -22,6 +24,6 @@ RUN npm install
 CMD ["crond", "-f", "-d", "8"]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTQ2ODcyNjQsLTE0NzY4OTM2OTksNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTIyNDYwNDI0OSwtMTQ3Njg5MzY5OSw3Mz
+A5OTgxMTZdfQ==
 -->
