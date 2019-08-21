@@ -4,7 +4,7 @@ In this article we will walk trough to the creation of a container and a cronjob
 
 I will use examples in my usage during the building of a **scrapper**, so consider `scrapper` the root folder of my app.
 
-# Create your crontab file
+## Create your crontab file
 ```
 * * * * * export NODE_PATH=/app/scrapper/node_modules/ && cd /app/scrapper && npm run start >> /logs/scrapper.log 2>&1
 ```
@@ -12,7 +12,7 @@ I will use examples in my usage during the building of a **scrapper**, so consid
 There are a few interesting parts here that I had to research for.
 We  need to tell to the cronjob where are our `node_modules` folder, otherwise the system wont find our modules.  We can do this with: `NODE_PATH=/app/scrapper/node_modules/`. After that we move inside our code folder with `&& cd /app/scrapper` and  we run the start script  of our app with `&& npm run start`. Finally we set the output logs to a file with `>> /logs/scrapper.log 2>&1`.
 
-# Setup your image
+## Setup your image
 To mantain the size of the containers to the minimum I gonna use the Alpine version of the Node image.
 
 My `Dockerfile` looks like this:
@@ -29,6 +29,6 @@ CMD ["crond", "-f", "-d", "8"]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODYyODAzNzAsLTUzNzIyODYzMiwtMT
-Q3Njg5MzY5OSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTQ2NDkxMTYyMiwtMTM4NjI4MDM3MCwtNT
+M3MjI4NjMyLC0xNDc2ODkzNjk5LDczMDk5ODExNl19
 -->
