@@ -9,6 +9,10 @@ I will use examples in my usage during the building of a **scrapper**, so consid
 * * * * * export NODE_PATH=/app/scrapper/node_modules/ && cd /app/scrapper && npm run start >> /logs/scrapper.log 2>&1
 ```
 
+There are a few interesting parts here that I had to research for.
+We  need to tell to the cronjob where are our `node_modules` folder, otherwise the system wont find our modules. 
+Yo
+
 # Setup your image
 To mantain the size of  the containers to the minimum size possible I gonna use the Alpine version of the Node image.
 
@@ -24,6 +28,6 @@ RUN npm install
 CMD ["crond", "-f", "-d", "8"]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNDYwNDI0OSwtMTQ3Njg5MzY5OSw3Mz
+eyJoaXN0b3J5IjpbMTU2MTA3NTE5MCwtMTQ3Njg5MzY5OSw3Mz
 A5OTgxMTZdfQ==
 -->
