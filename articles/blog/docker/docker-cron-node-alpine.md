@@ -10,12 +10,10 @@ I will use examples in my usage during the building of a **scrapper**, so consid
 ```
 
 There are a few interesting parts here that I had to research for.
-We  need to tell to the cronjob where are our `node_modules` folder, otherwise the system wont find our modules.  We can do this with: `NODE_PATH=/app/scrapper/node_modules/`. After that we move inside our code folder with `&& cd /app/scrapper` and  we run the start script  of our app with `&& npm run start`.
-
-We can
+We  need to tell to the cronjob where are our `node_modules` folder, otherwise the system wont find our modules.  We can do this with: `NODE_PATH=/app/scrapper/node_modules/`. After that we move inside our code folder with `&& cd /app/scrapper` and  we run the start script  of our app with `&& npm run start`. Finally we set the output logs to a file with `>> /logs/scrapper.log 2>&1`.
 
 # Setup your image
-To mantain the size of  the containers to the minimum size possible I gonna use the Alpine version of the Node image.
+To mantain the size of the containers to the minimum I gonna use the Alpine version of the Node image.
 
 My `Dockerfile` looks like this:
 ```
@@ -28,7 +26,9 @@ RUN npm install
 # start crond with log level 8 in foreground, output to stderr
 CMD ["crond", "-f", "-d", "8"]
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNzIyODYzMiwtMTQ3Njg5MzY5OSw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTEzODYyODAzNzAsLTUzNzIyODYzMiwtMT
+Q3Njg5MzY5OSw3MzA5OTgxMTZdfQ==
 -->
