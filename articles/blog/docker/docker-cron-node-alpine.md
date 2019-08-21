@@ -2,8 +2,13 @@
 
 In this article we will walk trough to the creation of a container and a cronjob to execute tasks periodically.
 
+# Create your crontab file
+
+
 # Setup your image
-To mantain the size of  the containers to the minimum size possible I gonna use 
+To mantain the size of  the containers to the minimum size possible I gonna use the Alpine version of the Node image.
+
+My `Dockerfile` looks like this:
 ```
 FROM node:10-alpine
 # copy crontabs for root user
@@ -15,6 +20,6 @@ RUN npm install
 CMD ["crond", "-f", "-d", "8"]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ5Njc3MDI5LC0xNDc2ODkzNjk5LDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbLTIxNDQwODE1OTYsLTE0NzY4OTM2OTksNz
+MwOTk4MTE2XX0=
 -->
