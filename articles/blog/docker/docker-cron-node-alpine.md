@@ -1,7 +1,6 @@
+# How to set-up a cron job inside a docker container
 
-
-
-> Written with [StackEdit](https://stackedit.io/).
+In this article
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE3NzUzMTQ3NzEsNzMwOTk4MTE2XX0=
 -->
